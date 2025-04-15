@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NumberConvert } from '../../lib/Number-convert';
-import {FormsModule} from '@angular/forms';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-home',
@@ -9,14 +9,16 @@ import {FormsModule} from '@angular/forms';
   imports: [FormsModule],
 })
 export class HomeComponent {
-  numberEnter = "";
+  numberEnter = '';
   result = '';
   private converter: NumberConvert = new NumberConvert();
-  
+
   onSubmit(event: Event) {
     event.preventDefault();
-  
-    const num = parseInt(this.numberEnter);
+
+    const cleanedInput = this.numberEnter.replace(/\s+/g, '');
+    const num = parseInt(cleanedInput);
+
     if (!isNaN(num)) {
       if (num >= 0) {
         this.result = this.converter.toWords(num);
@@ -27,5 +29,4 @@ export class HomeComponent {
       this.result = 'Invalid input. Please enter a number.';
     }
   }
-  
 }
