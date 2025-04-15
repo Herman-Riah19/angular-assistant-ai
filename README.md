@@ -1,59 +1,76 @@
-# AssistantAi
+# ISA TO TENY
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.5.
+![GitDash Preview](/public/capture/Capture_ecran.png)
+**Isa to Teny** is a web application built with [Angular](https://angular.io/) that allows users to **convert numbers into words in Malagasy**.  
+It was created to make reading and writing numbers in the Malagasy language easier and more accessible.
 
-## Development server
+---
 
-To start a local development server, run:
+## 🚀 Development Server
+
+To run the application locally, use the following command:
 
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Once the server is running, open your browser and navigate to:  
+[http://localhost:4200/](http://localhost:4200/)  
+The app will automatically reload whenever you modify any of the source files.
 
-## Code scaffolding
+---
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+## 🛠 Code Scaffolding
+
+Angular CLI provides powerful tools for generating components. To create a new component:
 
 ```bash
 ng generate component component-name
 ```
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+For a full list of available schematics (such as `components`, `directives`, or `pipes`), run:
 
 ```bash
 ng generate --help
 ```
 
-## Building
+---
 
-To build the project run:
+## 🧱 Building the Project
+
+To build the application for production:
 
 ```bash
 ng build
 ```
 
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
+The build artifacts will be stored in the `dist/` directory. The production build is optimized for speed and performance.
 
-## Running unit tests
+---
 
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
+## 🧪 Running Unit Tests
+
+To execute unit tests using the [Karma](https://karma-runner.github.io) test runner:
 
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+---
 
-For end-to-end (e2e) testing, run:
+## 🧪 Running End-to-End Tests
+
+To run end-to-end (e2e) tests:
 
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
+> Note: Angular CLI does not include an e2e framework by default. You can use one that fits your needs (e.g., Cypress, Playwright, or Protractor).
 
-## Additional Resources
+---
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+## 📚 Additional Resources
+
+For more information on using Angular CLI and a complete command reference, visit:  
+👉 [Angular CLI - Command Reference](https://angular.dev/tools/cli)
