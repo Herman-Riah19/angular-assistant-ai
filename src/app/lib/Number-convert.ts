@@ -275,28 +275,41 @@ export class NumberConvert {
   }
 
   convertBillions(number: number): string {
-    switch (number) {
-      case 1000000000:
-        return Dictionary.BILLION;
-      case 2000000000:
-        return Dictionary.TWO_BILLION;
-      case 3000000000:
-        return Dictionary.THREE_BILLION;
-      case 4000000000:
-        return Dictionary.FOUR_BILLION;
-      case 5000000000:
-        return Dictionary.FIVE_BILLION;
-      case 6000000000:
-        return Dictionary.SIX_BILLION;
-      case 7000000000:
-        return Dictionary.SEVEN_BILLION;
-      case 8000000000:
-        return Dictionary.EIGHT_BILLION;
-      case 9000000000:
-        return Dictionary.NINE_BILLION;
-      default:
-        return '';
+    const beforeBillions = number / 1000000000;
+    if(beforeBillions >= 1 && beforeBillions <= 9) {
+        switch (number) {
+            case 1000000000:
+                return Dictionary.BILLION;
+            case 2000000000:
+                return Dictionary.TWO_BILLION;
+            case 3000000000:
+                return Dictionary.THREE_BILLION;
+            case 4000000000:
+                return Dictionary.FOUR_BILLION;
+            case 5000000000:
+                return Dictionary.FIVE_BILLION;
+            case 6000000000:
+                return Dictionary.SIX_BILLION;
+            case 7000000000:
+                return Dictionary.SEVEN_BILLION;
+            case 8000000000:
+                return Dictionary.EIGHT_BILLION;
+            case 9000000000:
+                return Dictionary.NINE_BILLION;
+            default:
+                return '';
+        }
     }
+
+    if(beforeBillions >= 10 && beforeBillions <= 99) {
+        return `${this.toWords(beforeBillions)} lavitrisa`;
+    }
+
+    if(beforeBillions >= 100 && beforeBillions <= 999) {
+        return `${this.toWords(beforeBillions)} lavitrisa`;
+    }
+
+    return "";
   }
 
 }
