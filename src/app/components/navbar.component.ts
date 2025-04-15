@@ -5,14 +5,11 @@ import { Component } from '@angular/core';
   imports: [],
   template: `
     <header class="sticky top-0 flex justify-between h-16 z-10 items-center gap-1 border-b backdrop-blur px-4 md:px-6 text-white">
-      <a
-        href="/"
-        class="flex items-center gap-6 text-lg font-semibold md:text-base w-[8vw]"
-      >
-        <span class="text-lg font-bold">Isa Ho Teny</span>
-      </a>
+      <div class="flex w-full justify-start gap-4 md:ml-auto md:gap-2 lg:gap-4">
+        <h1 class="text-lg font-bold">Isa to Teny</h1>
+      </div>
 
-      <nav class="flex flex-col text-lg font-medium sm:hidden md:flex justify-end md:flex-row md:items-center md:gap-3 md:text-sm lg:gap-4">
+      <!-- <nav class="flex w-full flex-col text-lg font-medium sm:hidden md:flex justify-center md:flex-row md:items-center md:gap-3 md:text-sm lg:gap-4">
         @for(page of pages; track page) {
         <a
           href="{{page.link}}"
@@ -21,9 +18,16 @@ import { Component } from '@angular/core';
           {{page.name}}
         </a>
         }
-      </nav>
+      </nav> -->
 
-      <div class="flex w-full justify-end gap-4 md:ml-auto md:gap-2 lg:gap-4"></div>
+      <a
+        href="https://github.com/Herman-Riah19"
+        class="justify-end flex items-center gap-6 text-lg font-semibold md:text-base w-[8vw]"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <span class="text-lg font-bold">GitHub</span>
+      </a>
     </header>
   `,
   standalone: true,
@@ -32,7 +36,7 @@ export class NavbarComponent {
   pages = [
     {
       name: 'Home',
-      link: `/home`,
+      link: `/`,
     },
   ];
 }
