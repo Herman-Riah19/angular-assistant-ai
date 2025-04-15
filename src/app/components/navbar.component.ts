@@ -9,7 +9,7 @@ import { Component } from '@angular/core';
         href="/"
         class="flex items-center gap-6 text-lg font-semibold md:text-base w-[8vw]"
       >
-        <span class="text-lg font-bold">Assistan Ai</span>
+        <span class="text-lg font-bold">Isa Ho Teny</span>
       </a>
 
       <nav class="flex flex-col text-lg font-medium sm:hidden md:flex justify-end md:flex-row md:items-center md:gap-3 md:text-sm lg:gap-4">
@@ -31,16 +31,8 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
   pages = [
     {
-      name: 'Products',
-      link: `/products`,
-    },
-    {
-      name: 'About',
-      link: `/about`,
-    },
-    {
-      name: 'Contact',
-      link: `/contact`,
+      name: 'Home',
+      link: `/home`,
     },
   ];
 }

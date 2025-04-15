@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div class="flex items-center justify-center min-h-screen bg-transparent text-white">
+    <div class="container">
+        <form class="shadow-none rounded px-8 pt-6 pb-8 mb-4 flex flex-col gap-4 items-center" action="#" method="post">
+            <h2 class="text-5xl font-bold uppercase mb-4">Mampidira isa eto</h2>
+            <input class="border-2 border-white rounded-xl m-4 p-2 w-full" [(ngModel)]="numberEnter" name="numberEnter" type="text" placeholder="Ampidiro lahatsoratra eto" />
+            <button class="bg-blue-400 hover:bg-blue-500 p-4 rounded-xl" (click)="onSubmit($event)">Alefaso</button>
+        </form>
+        <div class="capitalize text-4xl font-bold text-center mt-4">
+            {{result}}
+        </div>
+    </div>
+</div>
